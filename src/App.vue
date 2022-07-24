@@ -1,6 +1,6 @@
 <script setup>
 import TheWelcome from './components/TheWelcome.vue'
-import ContactButton from './components/ContactButton.vue'
+import ContactForm from './components/ContactForm.vue'
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import ContactButton from './components/ContactButton.vue'
     <TheWelcome />
     </div>
     <div>
-    <ContactButton />
+    <ContactForm />
     </div>
   </main>
 </template>
