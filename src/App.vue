@@ -1,5 +1,5 @@
 <script setup>
-import TheWelcome from './components/TheWelcome.vue'
+import Description from './components/Description.vue'
 import ContactForm from './components/ContactForm.vue'
 </script>
 
@@ -9,16 +9,19 @@ import ContactForm from './components/ContactForm.vue'
   </header>
 
   <main>
-    <div>
-    <TheWelcome />
+    <div id="Description">
+    <Description />
     </div>
-    <div>
+    <div id="ContactForm">
     <ContactForm />
     </div>
   </main>
 </template>
 
 <style scoped>
+#Description{display:block;}
+#ContactForm{display:none;}
+
 header {
   line-height: 1.5;
 }

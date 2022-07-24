@@ -1,51 +1,54 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
+import DescriptionItem from './DescriptionItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
-function button_contact(){
-  alert("☠️☠️☣️☣️☠️☠️ You have been hacked!!!! ☠️☠️☣️☣️☠️☠️")
+import ContactForm from './ContactForm.vue'
+
+function Contact_Button(){
+  document.getElementById('Description').style.display = "none";
+  document.getElementById('ContactForm').style.display = "block";
 }
 </script>
 
 <template>
   <div>
-    <WelcomeItem  class='logo_color_secondary'>
+    <DescriptionItem  class='logo_color_secondary'>
       <template #icon>
         <DocumentationIcon />
       </template>
       <template #heading>Banking & Payments</template>
         With vast experience in the technology used in banks and other financial institutions, we provide hassle free IT consulting in the finance sector.
-    </WelcomeItem>
+    </DescriptionItem>
 
-    <WelcomeItem class='logo_color_secondary'>
+    <DescriptionItem class='logo_color_secondary'>
       <template #icon>
         <ToolingIcon />
       </template>
       <template #heading>Internet of Things</template>
       We extend seamless integration of sensors and other hardware using IoT for commercial clients.
-    </WelcomeItem>
+    </DescriptionItem>
 
-    <WelcomeItem class='logo_color_secondary'>
+    <DescriptionItem class='logo_color_secondary'>
       <template #icon>
         <EcosystemIcon />
       </template>
       <template #heading>Machine Learning</template>
       Our data science & ML experts propel your business forward by delivering crucial insights.
-    </WelcomeItem>
+    </DescriptionItem>
 
-      <WelcomeItem class='logo_color_secondary'>
+      <DescriptionItem class='logo_color_secondary'>
       <template #icon>
         <CommunityIcon />
       </template>
       <template #heading>Data Analytics</template>
       We help you understand your data through superior data analysis techniques.
-    </WelcomeItem>
+    </DescriptionItem>
   </div>
   <div class="contact_button_css">
-    <button class="button-86" role="button" v-on:click="button_contact()">Contact</button>
+    <button class="button-86" role="button" @click="Contact_Button()">Contact</button>
   </div>
 </template>
 
@@ -54,7 +57,7 @@ main .contact_button_css{
   margin: 0;
   position: relative;
   top: 0%;
-  left: 45%;
+  left: 46%;
 }
 
 .button-86 {
