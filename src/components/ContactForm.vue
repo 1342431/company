@@ -12,6 +12,9 @@ function sendEmail(){
     message => alert(message)
   );
 }
+function Send_Button(){
+  alert("message sent");
+}
 </script>
 <template>
   <div class="form">
@@ -21,7 +24,7 @@ function sendEmail(){
       <input type="text" id="email" placeholder="Your Email" required>
       <input type="text" id="phone" placeholder="Your Phone No." required>
       <input type="text" id="message" placeholder="How can I help you?" required>
-      <button class="button-86" type="submit" role="button" @click="sendEmail()">Send</button>
+      <button class="button-86" type="submit" role="button" @click="Send_Button()">Send</button>
     </form>
   </div>
 </template>
