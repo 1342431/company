@@ -1,16 +1,29 @@
 <script setup>
-function Home_Button(){
-    document.getElementById('Description').style.display = "block";
-    document.getElementById('ContactForm').style.display = "none";
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "1342431bcltd@gmail.com",
+    Password : "3D87D51844346B1B8CD2EF4303B57DF564B9",
+    To : 'info@1342431.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
 }
 </script>
 <template>
-    <div>
-        <h1 class="email_css"> info@1342431.com</h1>
-    </div>
-    <div class="home_button_css">
-        <button class="button-86" role="button" @click="Home_Button()">Home</button>
-    </div>
+  <div class="form">
+    <form>
+      <h3>Get in touch !!</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="email" placeholder="Your Email" required>
+      <input type="text" id="phone" placeholder="Your Phone No." required>
+      <input type="text" id="message" placeholder="How can I help you?" required>
+      <button class="button-86" type="submit" role="button" @click="sendEmail()">Send</button>
+    </form>
+  </div>
 </template>
 <style scoped>
 
@@ -39,6 +52,7 @@ function Home_Button(){
   cursor: pointer;
   z-index: 1;
   padding: 10px 20px;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
