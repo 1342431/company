@@ -1,30 +1,18 @@
 <script setup>
-function sendEmail(){
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "1342431bcltd@gmail.com",
-    Password : "3D87D51844346B1B8CD2EF4303B57DF564B9",
-    To : 'info@1342431.com',
-    From : document.getElementById("email").value,
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-    message => alert(message)
-  );
-}
 function Send_Button(){
   alert("message sent");
 }
 </script>
 <template>
   <div class="form">
-    <form>
+    <form action="https://formsubmit.co/973cd4c2571691fedf98728fcac72687" method="POST">
       <h3>Get in touch !!</h3>
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="text" id="email" placeholder="Your Email" required>
-      <input type="text" id="phone" placeholder="Your Phone No." required>
-      <input type="text" id="message" placeholder="How can I help you?" required>
-      <button class="button-86" type="submit" role="button" @click="Send_Button()">Send</button>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="text" id="phone" name="phone" placeholder="Your Phone No." required>
+      <input type="text" id="message" name="message" placeholder="How can I help you?" required>
+      <input type="hidden" name="_next" value="https://1342431.com/thanks.html">
+      <button class="button-86" type="submit">Send</button>
     </form>
   </div>
 </template>
