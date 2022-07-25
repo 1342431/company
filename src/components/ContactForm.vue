@@ -1,7 +1,4 @@
 <script setup>
-function Send_Button(){
-  alert("message sent");
-}
 </script>
 <template>
   <div class="form">
@@ -11,26 +8,13 @@ function Send_Button(){
       <input type="email" id="email" name="email" placeholder="Your Email" required>
       <input type="text" id="phone" name="phone" placeholder="Your Phone No." required>
       <input type="text" id="message" name="message" placeholder="How can I help you?" required>
-      <input type="hidden" name="_next" value="https://1342431.com/thanks.html">
+      <input type="hidden" name="_next" value="https://1342431.com/">
       <button class="button-86" type="submit">Send</button>
     </form>
   </div>
 </template>
+
 <style scoped>
-
-.email_css{
-    left: 35%;
-    bottom: 50px;
-    top: 200px;
-}
-
-.home_button_css{
-  margin: 0;
-  position: relative;
-  top: 300px;
-  left: 46%;
-}
-
 .button-86 {
   all: unset;
   width: 100px;
