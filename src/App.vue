@@ -1,6 +1,7 @@
 <script setup>
 import Description from './components/Description.vue'
 import ContactForm from './components/ContactForm.vue'
+import Thanks from './components/Thanks.vue'
 </script>
 
 <template>
@@ -15,12 +16,16 @@ import ContactForm from './components/ContactForm.vue'
     <div id="ContactForm">
     <ContactForm />
     </div>
+    <div id="Thanks">
+    <Thanks />
+    </div>
   </main>
 </template>
 
 <style scoped>
 #Description{display:block;}
 #ContactForm{display:none;}
+#Thanks{display:none;}
 
 header {
   line-height: 1.5;

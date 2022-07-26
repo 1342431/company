@@ -1,4 +1,9 @@
 <script setup>
+function Send_Button(){
+  document.getElementById('Description').style.display = "none";
+  document.getElementById('ContactForm').style.display = "none";
+  document.getElementById('Thanks').style.display = "block";
+}
 </script>
 <template>
   <div class="form">
@@ -8,8 +13,9 @@
       <input type="email" id="email" name="email" placeholder="Your Email" required>
       <input type="text" id="phone" name="phone" placeholder="Your Phone No." required>
       <input type="text" id="message" name="message" placeholder="How can I help you?" required>
-      <input type="hidden" name="_next" value="https://1342431.com/">
-      <button class="button-86" type="submit">Send</button>
+      <input type="hidden" name="_next" value="http://1342431.com">
+      <input type="hidden" name="_captcha" value="false">
+      <button class="button-86" type="submit" @click="Send_Button()">Send</button>
     </form>
   </div>
 </template>
