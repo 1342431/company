@@ -10,7 +10,7 @@ function Send_Button(){
     <form action="https://formsubmit.co/973cd4c2571691fedf98728fcac72687" method="POST">
       <h3>Get in touch !!</h3>
       <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="text" id="email" name="email" placeholder="Your Email" required>
       <input type="text" id="phone" name="phone" placeholder="Your Phone No." required>
       <input type="text" id="message" name="message" placeholder="How can I help you?" required>
       <input type="hidden" name="_next" value="http://1342431.com">
