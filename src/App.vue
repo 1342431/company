@@ -6,7 +6,7 @@ import Thanks from './components/Thanks.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/company.png" width="600" height="600" />
+    <img class="logo" src="./assets/company.png" width="600" height="600" />
   </header>
 
   <main>

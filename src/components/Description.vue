@@ -1,10 +1,4 @@
 <script setup>
-import DescriptionItem from './DescriptionItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 import ContactForm from './ContactForm.vue'
 
 function Contact_Button(){
@@ -14,38 +8,18 @@ function Contact_Button(){
 </script>
 
 <template>
-  <div>
-    <DescriptionItem  class='logo_color_secondary'>
-      <template #icon>
-        <DocumentationIcon />
-      </template>
-      <template #heading>Banking & Payments</template>
-        With vast experience in the technology used in banks and other financial institutions, we provide hassle free IT consulting in the finance sector.
-    </DescriptionItem>
+  <div class="description, logo_color_secondary">
+    <h1 class="logo_color_primary">Banking & Payments</h1>
+    <p>With vast experience in the technology used in banks and other financial institutions, we provide hassle free IT consulting in the finance sector.</p>
 
-    <DescriptionItem class='logo_color_secondary'>
-      <template #icon>
-        <ToolingIcon />
-      </template>
-      <template #heading>Internet of Things</template>
-      We extend seamless integration of sensors and other hardware using IoT for commercial clients.
-    </DescriptionItem>
-
-    <DescriptionItem class='logo_color_secondary'>
-      <template #icon>
-        <EcosystemIcon />
-      </template>
-      <template #heading>Machine Learning</template>
-      Our data science & ML experts propel your business forward by delivering crucial insights.
-    </DescriptionItem>
-
-      <DescriptionItem class='logo_color_secondary'>
-      <template #icon>
-        <CommunityIcon />
-      </template>
-      <template #heading>Data Analytics</template>
-      We help you understand your data through superior data analysis techniques.
-    </DescriptionItem>
+    <h1 class="logo_color_primary">Internet of Things</h1>
+    <p> We extend seamless integration of sensors and other hardware using IoT for commercial clients.</p>
+    
+    <h1 class="logo_color_primary">Machine Learning</h1>
+    <p>Our data science & ML experts propel your business forward by delivering crucial insights.</p>
+    
+    <h1 class="logo_color_primary">Data Analytics</h1>
+    <p>We help you understand your data through superior data analysis techniques.</p>
   </div>
   <div class="contact_button_css">
     <button class="button-86" role="button" @click="Contact_Button()">Contact</button>
@@ -53,11 +27,10 @@ function Contact_Button(){
 </template>
 
 <style scoped>
-main .contact_button_css{
-  margin: 0;
+
+.contact_button_css{
+  margin: 10% 37.5%;
   position: relative;
-  top: 0%;
-  left: 46%;
 }
 
 .button-86 {

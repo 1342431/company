@@ -8,10 +8,10 @@ function Send_Button(){
 <template>
   <div class="form">
     <form action="https://formsubmit.co/973cd4c2571691fedf98728fcac72687" method="POST">
-      <h3>Get in touch !!</h3>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="text" id="email" name="email" placeholder="Your Email" required>
-      <input type="text" id="phone" name="phone" placeholder="Your Phone No." required>
+      <h3 style="text-align:center">Get in touch!</h3>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input type="text" id="email" name="email" placeholder="Email" required>
+      <input type="text" id="phone" name="phone" placeholder="Phone" required>
       <input type="text" id="message" name="message" placeholder="How can I help you?" required>
       <input type="hidden" name="_next" value="http://1342431.com">
       <input type="hidden" name="_captcha" value="false">
@@ -22,6 +22,17 @@ function Send_Button(){
 </template>
 
 <style scoped>
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+input[type="text"] {
+  text-align: center;
+}
 .button-86 {
   all: unset;
   width: 100px;
@@ -33,8 +44,8 @@ function Send_Button(){
   color: #f0f0f0;
   cursor: pointer;
   z-index: 1;
-  padding: 10px 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 20px 37.5%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,6 +2,7 @@
 
 #app {
   max-width: 1280px;
+  min-width: 690px;
   margin: 0 auto;
   padding: 2rem;
   
@@ -17,8 +18,9 @@ a,
 
 .logo_color_primary {
   text-decoration: none;
-  color: #0b3b4e;
+  color: #b2b2b2;
   transition: 0.4s;
+  text-align: center;
 }
 
 .logo_color_secondary {
