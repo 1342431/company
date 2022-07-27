@@ -51,7 +51,7 @@ a,
 form{
   display: flex;
   flex-direction: column;
-  padding: 2vw 4vw;
+  padding: 2rem;
   max-width: 1280px;
   border-radius: 10px;
 }
